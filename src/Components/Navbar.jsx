@@ -78,7 +78,10 @@ const NavbarRight = styled.div`
 
 const IeeeLogo = styled.div``;
 
-const IEEEAndSairam = styled.img``;
+const IEEEAndSairam = styled.img`
+  object-fit: contain;
+  cursor: pointer;
+`;
 
 const NavbarLink = styled.div`
   padding: 10px;

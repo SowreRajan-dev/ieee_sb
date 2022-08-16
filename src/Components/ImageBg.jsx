@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-function ImageBg({ width, height }) {
+function ImageBg() {
   return (
     <div>
-      <ImageContainer width={width} height={height}>
+      <ImageContainer>
         <BackgroundImg
           src="https://images.unsplash.com/photo-1559523182-a284c3fb7cff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
           alt="bg-img"
@@ -29,10 +29,10 @@ export default ImageBg;
 const ImageContainer = styled.div`
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 `;
 const BackgroundImg = styled.img`
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: fill;
   z-index: -1;
@@ -58,6 +58,10 @@ const IEEELogo = styled.img`
   height: 130px;
   object-fit: contain;
   z-index: 1;
+
+  @media (min-width: 1024px) {
+    top: 40%;
+  }
 `;
 
 const LogoTextContainer = styled.div`
