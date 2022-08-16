@@ -27,7 +27,11 @@ function AboutUs() {
 
 export default AboutUs;
 
-const AboutUsContainer = styled.div``;
+const AboutUsContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+`;
 
 const AboutUsText = styled.div`
   font-size: 2rem;

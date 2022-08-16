@@ -13,6 +13,7 @@ import {
   Sticky,
 } from "react-scroll-motion";
 import AboutUs from "./Components/AboutUs";
+import VisionAndMission from "./Components/VisionAndMission";
 
 function App() {
   return (
@@ -29,8 +30,10 @@ function App() {
         </Animator>
       </ScrollPage>
       <ScrollPage>
-        <Animator>
+        <NavContainer>
           <Navbar />
+        </NavContainer>
+        <Animator>
           <ImageContainer>
             <BackgroundImg
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=884&q=80"
@@ -44,6 +47,11 @@ function App() {
           <AboutUs />
         </Animator>
       </ScrollPage>
+      <ScrollPage>
+        <Animator>
+          <VisionAndMission />
+        </Animator>
+      </ScrollPage>
     </ScrollContainer>
   );
 }
@@ -53,6 +61,14 @@ export default App;
 const ImageContainer = styled.div`
   width: 100%;
   height: calc(90vh - 50px);
+`;
+
+const NavContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 `;
 
 const BackgroundImg = styled.img`
