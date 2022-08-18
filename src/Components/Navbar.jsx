@@ -50,11 +50,6 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2; */
 `;
 
 const NavbarLeft = styled.div`
@@ -112,7 +107,7 @@ const ContactUsBtn = styled.button`
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
-  width: 150px;
+  width: 100%;
   font-size: 0.75rem;
   height: 40px;
   font-weight: 700;

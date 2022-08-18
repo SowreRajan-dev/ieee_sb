@@ -14,6 +14,7 @@ import {
 } from "react-scroll-motion";
 import AboutUs from "./Components/AboutUs";
 import VisionAndMission from "./Components/VisionAndMission";
+import Societies from "./Components/Societies";
 
 function App() {
   return (
@@ -50,6 +51,11 @@ function App() {
       <ScrollPage>
         <Animator>
           <VisionAndMission />
+        </Animator>
+      </ScrollPage>
+      <ScrollPage>
+        <Animator>
+          <Societies />
         </Animator>
       </ScrollPage>
     </ScrollContainer>
