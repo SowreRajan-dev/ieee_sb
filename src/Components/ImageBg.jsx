@@ -82,25 +82,29 @@ const LogoText = styled.h1`
   margin: 0;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 15px;
+  margin-bottom: 30px;
 `;
 
 const Seperator = styled.div`
-  width: 100%;
+  width: 60%;
   height: 1px;
   background: white;
-  margin: 10px 0;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20%;
 `;
 
 const CollageTextLogo = styled.div``;
 
 const CollageText = styled.p`
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 900;
   color: white;
   text-align: center;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-
   letter-spacing: 0;
 `;
 
@@ -109,7 +113,8 @@ const CollageMotto = styled.p`
   font-weight: 700;
   color: white;
   text-align: center;
-  margin: 0;
+  margin: 10px 0;
   font-family: "Montserrat", sans-serif;
+  font-style: italic;
   letter-spacing: 3px;
 `;

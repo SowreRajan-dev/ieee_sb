@@ -60,6 +60,7 @@ const AboutUsContent = styled.div`
   height: auto;
   margin-bottom: 20px;
   padding: 20px;
+  margin-left: 20px;
 `;
 
 const AboutUsContentText = styled.p`

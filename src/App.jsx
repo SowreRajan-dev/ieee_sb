@@ -15,6 +15,7 @@ import {
 import AboutUs from "./Components/AboutUs";
 import VisionAndMission from "./Components/VisionAndMission";
 import Societies from "./Components/Societies";
+import Members from "./Components/Members";
 
 function App() {
   return (
@@ -56,6 +57,11 @@ function App() {
       <ScrollPage>
         <Animator>
           <Societies />
+        </Animator>
+      </ScrollPage>
+      <ScrollPage>
+        <Animator>
+          <Members />
         </Animator>
       </ScrollPage>
     </ScrollContainer>
