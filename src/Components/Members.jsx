@@ -4,6 +4,7 @@ import {
   Student_branch_chapter_advisor,
   student_branch_executive_committee,
 } from "../Data/Members";
+
 function Members() {
   return (
     <MembersContainer>
@@ -96,6 +97,17 @@ const SbExecMembers = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    margin: 20px 0;
+  }
+  @media screen and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    margin: 20px 0;
+  }
 `;
 const SbExecMember = styled.div`
   display: flex;
@@ -143,6 +155,17 @@ const SbChapterAdvisors = styled.div`
 const SbChapterAdvisorMembers = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    margin: 20px 0;
+  }
+  @media screen and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    margin: 20px 0;
+  }
 `;
 
 const SbChapterAdvisorMember = styled.div`

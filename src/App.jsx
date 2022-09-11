@@ -44,26 +44,14 @@ function App() {
           </ImageContainer>
         </Animator>
       </ScrollPage>
-      <ScrollPage>
-        <Animator>
-          <AboutUs />
-        </Animator>
-      </ScrollPage>
-      <ScrollPage>
-        <Animator>
-          <VisionAndMission />
-        </Animator>
-      </ScrollPage>
-      <ScrollPage>
-        <Animator>
-          <Societies />
-        </Animator>
-      </ScrollPage>
-      <ScrollPage>
-        <Animator>
-          <Members />
-        </Animator>
-      </ScrollPage>
+
+      <AboutUs />
+
+      <VisionAndMission />
+
+      <Societies />
+
+      <Members />
     </ScrollContainer>
   );
 }

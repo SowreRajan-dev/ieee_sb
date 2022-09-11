@@ -69,6 +69,15 @@ const Society = styled.div`
   width: 100%;
   height: 100%;
   padding: 20px;
+
+  @media screen and (max-width: 850px) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+  @media screen and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
 `;
 
 const IndividualSociety = styled.div`
