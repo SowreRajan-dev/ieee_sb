@@ -3,7 +3,7 @@ import styled from "styled-components";
 import societyDatas from "../Data/Societies";
 function Societies() {
   return (
-    <SocietiesContainer>
+    <SocietiesContainer id="society">
       <SocietyText>Societies</SocietyText>
       <Society>
         {societyDatas.sociteies.map((society, index) => (

@@ -53,4 +53,32 @@ module.exports = {
       member_name: "Dr.S.Suganthi",
     },
   ],
+
+  student_branch_members: [
+    {
+      desig: "Chair",
+      imageUrl: "/Assets/sb_student_member/chair.jpeg",
+      member_name: "Monish k",
+    },
+    {
+      desig: "Vice Chair",
+      imageUrl: "/Assets/sb_student_member/vice_chair.jpeg",
+      member_name: "Soundarya",
+    },
+    {
+      desig: "Secretary",
+      imageUrl: "/Assets/sb_student_member/secretary.jpeg",
+      member_name: "Aravindan.S",
+    },
+    {
+      desig: "Treasurer",
+      imageUrl: "/Assets/sb_student_member/Treasurer.jpeg",
+      member_name: "Harini.R",
+    },
+    {
+      desig: "Web master",
+      imageUrl: "/Assets/sb_student_member/web_master.jpeg",
+      member_name: "Laxminarayanan.V",
+    },
+  ],
 };

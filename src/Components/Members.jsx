@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {
   Student_branch_chapter_advisor,
   student_branch_executive_committee,
+  student_branch_members,
 } from "../Data/Members";
 
 function Members() {
@@ -42,6 +43,23 @@ function Members() {
             ))}
           </SbChapterAdvisorMembers>
         </SbChapterAdvisors>
+
+        <SbBranchembers>
+          <SbHead>Student Branch Members</SbHead>
+          <SbMemberContainer>
+            <SbMemberslist>
+              {student_branch_members.map((member, index) => (
+                <SbMemberProfile key={index}>
+                  <SbMemberPic src={member.imageUrl} alt="stb" />
+                  <SbDesc>
+                    <SbMemberName>{member.member_name}</SbMemberName>
+                    <SbDesig>{member.desig}</SbDesig>
+                  </SbDesc>
+                </SbMemberProfile>
+              ))}
+            </SbMemberslist>
+          </SbMemberContainer>
+        </SbBranchembers>
       </MemberSection>
     </MembersContainer>
   );
@@ -78,7 +96,7 @@ const MemberSection = styled.div`
 const SbBranchExcutive = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin-top: 50px;
   width: 100%;
 `;
 const SbHead = styled.p`
@@ -97,6 +115,7 @@ const SbExecMembers = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-top: 50px;
 
   @media screen and (max-width: 800px) {
     display: grid;
@@ -114,6 +133,8 @@ const SbExecMember = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+
   width: 100%;
   height: 100%;
   margin-right: 1rem;
@@ -147,12 +168,13 @@ const SbExecMemberDesig = styled.p`
 const SbChapterAdvisors = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin-top: 50px;
   width: 100%;
   height: 100%;
 `;
 
 const SbChapterAdvisorMembers = styled.div`
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
 
@@ -205,4 +227,71 @@ const SbChapterAdvisorDesig = styled.p`
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
   color: #000;
+`;
+
+const SbBranchembers = styled.div`
+  margin-top: 30px;
+  width: 100%;
+`;
+
+const SbMemberContainer = styled.div`
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const SbMemberProfile = styled.div`
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+`;
+
+const SbMemberPic = styled.img`
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+`;
+
+const SbDesig = styled.p`
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+`;
+
+const SbMemberName = styled.p`
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 600;
+`;
+
+const SbDesc = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+`;
+
+const SbMemberslist = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  place-items: center;
+  padding: 10px;
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
 `;

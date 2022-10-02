@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const handleToggle = () => {
@@ -22,22 +22,34 @@ function Navbar() {
         </MenuLabel>
         <NavbarUl clicked={navbarOpen}>
           <NavbarLink>
-            <NavbarLinkText>Home</NavbarLinkText>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <NavbarLinkText>Home</NavbarLinkText>
+            </Link>
           </NavbarLink>
           <NavbarLink>
-            <NavbarLinkText>About Us</NavbarLinkText>
+            <Link to="/aboutus" style={{ textDecoration: "none" }}>
+              <NavbarLinkText>About Us</NavbarLinkText>
+            </Link>
           </NavbarLink>
           <NavbarLink>
-            <NavbarLinkText>Society</NavbarLinkText>
+            <Link to="/society" style={{ textDecoration: "none" }}>
+              <NavbarLinkText>Society</NavbarLinkText>
+            </Link>
           </NavbarLink>
           <NavbarLink>
-            <NavbarLinkText>Members</NavbarLinkText>
+            <Link to="/members" style={{ textDecoration: "none" }}>
+              <NavbarLinkText>Members</NavbarLinkText>
+            </Link>
           </NavbarLink>
           <NavbarLink>
-            <NavbarLinkText>Events</NavbarLinkText>
+            <Link to="/events" style={{ textDecoration: "none" }}>
+              <NavbarLinkText>Events</NavbarLinkText>
+            </Link>
           </NavbarLink>
           <NavbarLink>
-            <NavbarLinkText>Gallery</NavbarLinkText>
+            <Link to="/gallery" style={{ textDecoration: "none" }}>
+              <NavbarLinkText>Gallery</NavbarLinkText>
+            </Link>
           </NavbarLink>
         </NavbarUl>
       </NavbarMiddle>
@@ -171,6 +183,7 @@ const IEEEAndSairam = styled.img`
 const NavbarLink = styled.li`
   padding: 10px;
   list-style: none;
+  text-decoration: none;
 `;
 
 const NavbarUl = styled.ul`
@@ -204,6 +217,7 @@ const NavbarLinkText = styled.p`
   font-family: "Montserrat", " sans-serif";
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
 `;
 
 const ContactUsContainer = styled.div`
