@@ -28,6 +28,7 @@ function VisionAndMission() {
           its technologies progress. To encourage the students around to get
           involved in promoting innovative ideas
         </Missions>
+        <Seperator></Seperator>
       </MissionSection>
     </VisionAndMissionContainer>
   );
@@ -107,4 +108,11 @@ const Missions = styled.p`
   line-height: 31px;
   text-align: justify;
   line-break: auto;
+`;
+
+const Seperator = styled.div`
+  width: 70%;
+  height: 1px;
+  background-color: #d9d9d9;
+  border: 10px;
 `;
