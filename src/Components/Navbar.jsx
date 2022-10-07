@@ -91,6 +91,7 @@ const NavbarLeft = styled.div`
   flex: 1;
   height: 100%;
   padding: 10px 0;
+  margin-bottom:0.7rem;
 `;
 
 const NavbarMiddle = styled.div`
@@ -110,11 +111,14 @@ const NavbarRight = styled.div`
   align-items: center;
 `;
 
-const IeeeLogo = styled.div``;
+const IeeeLogo = styled.div`
+
+`;
 
 const IEEEAndSairam = styled.img`
   object-fit: contain;
   cursor: pointer;
+  
 `;
 
 const NavbarLink = styled.div`
