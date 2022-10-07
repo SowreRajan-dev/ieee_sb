@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 function AboutUs() {
   return (
-    <AboutUsContainer>
+    <AboutUsContainer id="aboutus">
       <AboutUsText>ABOUT US</AboutUsText>
       <AboutUsSection>
         <SITImage src="Assets\Images\situniv.png" alt="sit-building" />
@@ -47,12 +47,22 @@ const AboutUsSection = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  width: 100%;
+
+  @media screen and (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const SITImage = styled.img`
   width: 50%;
   height: auto;
   margin-bottom: 20px;
+  padding: 20px;
+  @media screen and (max-width: 950px) {
+    width: 100%;
+  }
 `;
 
 const AboutUsContent = styled.div`
@@ -60,6 +70,13 @@ const AboutUsContent = styled.div`
   height: auto;
   margin-bottom: 20px;
   padding: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  margin-right: 20px;
+
+  @media screen and (max-width: 950px) {
+    width: 100%;
+  }
 `;
 
 const AboutUsContentText = styled.p`
@@ -71,4 +88,8 @@ const AboutUsContentText = styled.p`
   line-height: 31px;
   text-align: justify;
   line-break: auto;
+
+  @media screen and (max-width: 950px) {
+    font-size: 20px;
+  }
 `;
