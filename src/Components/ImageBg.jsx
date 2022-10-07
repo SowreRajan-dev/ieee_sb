@@ -4,10 +4,7 @@ function ImageBg() {
   return (
     <div>
       <ImageContainer>
-        <BackgroundImg
-          src="https://images.unsplash.com/photo-1559523182-a284c3fb7cff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-          alt="bg-img"
-        />
+        <BackgroundImg src="\Assets\Images\grpimg.jpg" alt="bg-img" />
         <BlackLayer></BlackLayer>
         <IEEELogo src="\Assets\Images\IeeeLogo.png" alt="ieee-logo" />
         <LogoTextContainer>
@@ -34,7 +31,7 @@ const ImageContainer = styled.div`
 const BackgroundImg = styled.img`
   width: 100vw;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   z-index: -1;
   background: rgba(255, 255, 255, 0.25);
 `;

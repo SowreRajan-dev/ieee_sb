@@ -81,4 +81,12 @@ module.exports = {
       member_name: "Laxminarayanan.V",
     },
   ],
+  member_count: [
+    {
+      total_members: 110,
+      Societies: 8,
+      Events: 100,
+      Staffs:160
+    }
+  ]
 };

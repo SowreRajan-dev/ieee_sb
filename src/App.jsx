@@ -21,6 +21,7 @@ import GalleryContainer from "./Components/GalleryContainer";
 import Membership from "./Components/Membership";
 import Footer from "./Components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MembersCount from "./Components/MembersCount";
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
         </ScrollPage>
         <GalleryContainer />
         <Membership />
+        <MembersCount />
         <Footer />
       </ScrollContainer>
       <Routes>
@@ -132,6 +134,7 @@ const EventContent = styled.div`
   margin-top: 30px;
   a {
     text-decoration: none;
+    font-size: large;
     color: #007cc2;
   }
 `;
@@ -150,4 +153,5 @@ const EventName = styled.p`
 const EventPoster = styled.img`
   width: 100%;
   height: calc(90vh - 100px);
+  object-fit: contain;
 `;
