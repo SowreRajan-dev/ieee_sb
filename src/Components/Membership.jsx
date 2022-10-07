@@ -13,7 +13,7 @@ function Membership() {
             dedicated to advancing technology for the benefit of humanity.
           </MsPara>
           <MsButton>
-            <a href="https://www.ieeemadras.org/">Visit website</a>
+            <a href="https://www.ieeemadras.org/" target="_blank">Visit website</a>
           </MsButton>
         </AboutContainer>
       </MadrasSection>
@@ -160,6 +160,7 @@ const MsPara = styled.p`
 
 const AboutContainer = styled.div`
   position: relative;
+
 `;
 
 const MsButton = styled.button`
@@ -169,11 +170,13 @@ const MsButton = styled.button`
   background: #005f94;
   font-size: 1.2rem;
   border: none;
+  marign-bottom:2rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 500;
   position: absolute;
-  right: 30px;
+  left:50%;
+  transform:translate(-50%,50%);
   a {
     text-decoration: none;
     color: #fff;
@@ -191,6 +194,7 @@ const MembershipSection = styled.div`
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
+  margin-top:8rem;
 `;
 
 const MemberShipText = styled.h2`

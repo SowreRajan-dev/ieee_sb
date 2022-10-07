@@ -118,14 +118,11 @@ const NavbarLeft = styled.div`
   flex: 1;
   height: 100%;
   padding: 10px 0;
-<<<<<<< HEAD
   margin-bottom:0.7rem;
-=======
   @media screen and (max-width: 950px) {
     flex: 0;
     margin-bottom: 20px;
   }
->>>>>>> 5f52f854744e69e43373454f8930d3b998ad163e
 `;
 
 const NavbarMiddle = styled.div`
