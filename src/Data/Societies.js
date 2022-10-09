@@ -1,11 +1,18 @@
 module.exports = {
   sociteies: [
     {
+      name:"APS",
+      fullName:"Antennas & Propagation Society",
+      imageUrl:"/Assets/SocietyLogos/aps.png",
+      websiteUrl:"https://edu.ieee.org/in-sairamit",
+      branchChapter: "SIT - Student Branch Chapter",
+    },
+    {
       name: "PES",
       fullName: "POWER & ENERY SOCIETY",
       imageUrl: "/Assets/SocietyLogos/pes.png",
       websiteUrl: "https://edu.ieee.org/in-sairamitpes/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#025a00",
     },
     {
@@ -13,7 +20,7 @@ module.exports = {
       fullName: "Electron Devices SOCIETY",
       imageUrl: "/Assets/SocietyLogos/eds.png",
       websiteUrl: "https://edu.ieee.org/in-sairamiteds/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#0D6AA0",
     },
     {
@@ -21,7 +28,7 @@ module.exports = {
       fullName: "Computer Society",
       imageUrl: "/Assets/SocietyLogos/cs.png",
       websiteUrl: "https://edu.ieee.org/in-sairamitcs/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#010101",
     },
     {
@@ -29,7 +36,7 @@ module.exports = {
       fullName: "Computational Intelligence Society",
       imageUrl: "/Assets/SocietyLogos/cis.png",
       websiteUrl: "https://edu.ieee.org/in-sairamitcis/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#010101",
     },
     {
@@ -37,7 +44,7 @@ module.exports = {
       fullName: "Broadcast Technology Society",
       imageUrl: "/Assets/SocietyLogos/bts.png",
       websiteUrl: "https://edu.ieee.org/in-sairamitbts/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#E40721",
     },
     {
@@ -45,7 +52,7 @@ module.exports = {
       fullName: "Women in Engineering",
       imageUrl: "/Assets/SocietyLogos/wie.png",
       websiteUrl: "https://edu.ieee.org/in-sairamitwie/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#6A2D7B",
     },
     {
@@ -53,7 +60,7 @@ module.exports = {
       fullName: "Robotics & Automation Society",
       imageUrl: "/Assets/SocietyLogos/ras.png",
       websiteUrl: "https://edu.ieee.org/in-sairamitras/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#61116A",
     },
     {
@@ -61,7 +68,7 @@ module.exports = {
       fullName: "Consumer Technology",
       imageUrl: "/Assets/SocietyLogos/ct.jpeg",
       websiteUrl: "https://edu.ieee.org/in-sairamitct/",
-      branchChapter: "SIT - Stuent Branch Chapter",
+      branchChapter: "SIT - Student Branch Chapter",
       color: "#0D6AA0",
     },
   ],

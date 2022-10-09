@@ -4,10 +4,12 @@ import {
   Student_branch_chapter_advisor,
   student_branch_executive_committee,
   student_branch_members,
-} from "../Data/Members";
+} from "../Data/updatedMembers";
 
 function Members() {
   return (
+    <>
+    <MembersTag id = "members"/>
     <MembersContainer>
       <MemberHead>Members</MemberHead>
       <MemberSection>
@@ -26,6 +28,8 @@ function Members() {
             ))}
           </SbExecMembers>
         </SbBranchExcutive>
+        <br />
+        <br />
         <SbChapterAdvisors>
           <SbHead>Student Branch Chapter Advisors</SbHead>
           <SbChapterAdvisorMembers>
@@ -43,7 +47,8 @@ function Members() {
             ))}
           </SbChapterAdvisorMembers>
         </SbChapterAdvisors>
-
+        <br />
+        <br />
         <SbBranchembers>
           <SbHead>Student Branch Members</SbHead>
           <SbMemberContainer>
@@ -62,10 +67,13 @@ function Members() {
         </SbBranchembers>
       </MemberSection>
     </MembersContainer>
+    </>
   );
 }
 
 export default Members;
+
+const MembersTag = styled.div``
 
 const MembersContainer = styled.div`
   display: flex;
@@ -75,6 +83,7 @@ const MembersContainer = styled.div`
   width: 100%;
   height: 100%;
   padding: 20px;
+  margin-top:10rem;
 `;
 const MemberHead = styled.p`
   font-size: 2rem;

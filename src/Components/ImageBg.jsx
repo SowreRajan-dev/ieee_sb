@@ -102,7 +102,7 @@ const CollageText = styled.p`
   text-align: center;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0;
+  letter-spacing: 0.2rem;
 `;
 
 const CollageMotto = styled.p`

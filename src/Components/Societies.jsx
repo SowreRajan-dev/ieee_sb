@@ -3,8 +3,11 @@ import styled from "styled-components";
 import societyDatas from "../Data/Societies";
 function Societies() {
   return (
+    <>
+    <SocietyTag id="society"/>
     <SocietiesContainer id="society">
       <SocietyText>Societies</SocietyText>
+      <SocietyBranch>SIT - Student Branch Chapter</SocietyBranch>
       <Society>
         {societyDatas.sociteies.map((society, index) => (
           <SocietyMapper key={index}>
@@ -18,19 +21,20 @@ function Societies() {
                 <SocietyName color={society.color}>
                   {society.name} - {society.fullName}
                 </SocietyName>
-                <SocietyBranch color={society.color}>
-                  {society.branchChapter}
-                </SocietyBranch>
+               
               </a>
             </SocietyTextInfo>
           </SocietyMapper>
         ))}
       </Society>
     </SocietiesContainer>
+    </>
   );
 }
 
 export default Societies;
+
+const SocietyTag = styled.div``
 
 const SocietiesContainer = styled.div`
   display: flex;
@@ -39,7 +43,7 @@ const SocietiesContainer = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  margin-top: 30px;
+  margin-top: 5rem;
 
   a {
     text-decoration: none;
@@ -90,11 +94,12 @@ const IndividualSociety = styled.div`
   justify-content: center;
   padding: 20px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
 
   cursor: pointer;
   &:hover {
     scale: 1.1;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 `;
 
@@ -116,13 +121,13 @@ const SocietyMapper = styled.div`
 `;
 
 const SocietyBranch = styled.p`
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  cursor: pointer;
   color: ${(props) => props.color};
   margin-top: 10px;
+  margin-bottom:2rem;
 `;
 
 const SocietyTextInfo = styled.div`

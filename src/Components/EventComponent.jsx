@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 function EventComponent() {
   return (
+    <>
+    <EventTag id = "events"/>
     <EventContainer>
       <EventHead>EVENTS</EventHead>
       <EventLists>
@@ -45,16 +47,18 @@ function EventComponent() {
             <EventTexts>CIS Society inaugurations</EventTexts>
             <EventSeperator />
           </EventLinks>
-          <EventLinks>
-            <EventTexts>CIS Society inaugurations</EventTexts>
-          </EventLinks>
         </EventAlertContainer>
       </EventAlert>
     </EventContainer>
+    </>
   );
 }
 
 export default EventComponent;
+
+const EventTag = styled.div`
+
+`
 
 const EventContainer = styled.div`
   width: 100%;
@@ -125,28 +129,53 @@ const EventAlert = styled.div`
 
 const EventAlertContainer = styled.div`
   width: 80%;
-  height: 100%;
+  height: 110%;
   display: flex;
   padding: 20px;
   border-radius: 20px;
   flex-direction: column;
 `;
 
-const EventTexts = styled.div`
+const EventTexts = styled.button`
   font-family: "Montserrat", sans-serif;
+  margin-left:20%;
+  
+background: rgba(255, 255, 255, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 95, 145, 0.4);
+backdrop-filter: blur(13.2px);
+-webkit-backdrop-filter: blur(13.2px);
+border: 1px solid rgba(255, 255, 255, 0.42);
+  border:none;
+  border-radius:30px;
+  padding:0.5rem;
+  width:40rem;
   font-style: normal;
+  color:rgb(0,95,145);
   font-weight: 500;
   font-size: 1rem;
   line-height: 44px;
   text-align: center;
   letter-spacing: 0.05em;
   color: rgba(2, 90, 0, 0.81);
+  cursor:pointer;
+  transition:0.3s all ease-in;
+
+  &:hover
+  {
+    background: rgb(0,95,145);
+    color:white;
+    transform:scale(1.05);
+    transition:0.3s all ease-out;
+  }
+  
+  
 `;
 
 const EventSeperator = styled.div`
   width: 100%;
   height: 1px;
-  background: #bababa;
+  background: #fff;
   border-radius: 20px;
 `;
 

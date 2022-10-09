@@ -5,6 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function GalleryContainer() {
   return (
+    <>
+    <GalleryTag id="gallery"/>
     <GalleryCover>
       <GalleryText>Gallery</GalleryText>
       <GalleryCarousaul>
@@ -38,16 +40,20 @@ function GalleryContainer() {
         </Carousel>
       </GalleryCarousaul>
     </GalleryCover>
+    </>
   );
 }
 
 export default GalleryContainer;
+
+const GalleryTag = styled.div``
 
 const GalleryCover = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top:5rem;
 `;
 
 const GalleryText = styled.p`

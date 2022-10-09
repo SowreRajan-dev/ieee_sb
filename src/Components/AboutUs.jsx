@@ -2,35 +2,30 @@ import React from "react";
 import styled from "styled-components";
 function AboutUs() {
   return (
-    <AboutUsContainer id="aboutus">
-      <AboutUsText>ABOUT US</AboutUsText>
+    <>
+    <A id="aboutus"/>
+    <AboutUsContainer >
+      <AboutUsText >ABOUT US</AboutUsText>
       <AboutUsSection>
         <SITImage src="Assets\Images\situniv.png" alt="sit-building" />
         <AboutUsContent>
           <AboutUsContentText>
-            <b>IEEE SIT</b> is one of the most active student chapters. We're a
-            diverse group of tech enthusiasts, developers and designers who live
-            with the motto "Advancing Technology for Humanity". Members of IEEE
-            SIT are active participants in national and international level
-            hackathons and involve in multiple projects. IEEE, an association
-            dedicated to advancing innovation and technological excellence for
-            the benefit of humanity, IEEE is the world's largest technical
-            professional society. It is also a shared-platform for the exultant
-            upbringing of new ideas or projects into furtherance . IEEE SIT is
-            affiliated to IEEE Madras Section.
+          IEEE is the world’s largest technical professional society, dedicated to advancing innovation and technological excellence for the benefit of humanity. It is also a shared platform for the exultant upbringing of new ideas or projects into furtherance.   IEEE-SIT is affiliated with the IEEE Madras Chapter, which is one of the most active student chapters, constituting a separate entity of tech enthusiasts, developers, and designers who go along with the motto of “Advancing Technology for Humanity”.  Members of IEEE-SIT are active participants in national and international hackathons and are involved in multiple projects.  
           </AboutUsContentText>
         </AboutUsContent>
       </AboutUsSection>
-    </AboutUsContainer>
+    </AboutUsContainer></>
   );
 }
 
 export default AboutUs;
 
+const A =styled.div``
 const AboutUsContainer = styled.div`
   width: 100%;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 10rem;
+  margin-bottom:5rem;
 `;
 
 const AboutUsText = styled.div`
@@ -48,7 +43,7 @@ const AboutUsSection = styled.div`
   align-items: center;
   padding: 10px;
   width: 100%;
-
+  margin-top:3rem;
   @media screen and (max-width: 950px) {
     display: flex;
     flex-direction: column;

@@ -13,7 +13,7 @@ function Membership() {
             dedicated to advancing technology for the benefit of humanity.
           </MsPara>
           <MsButton>
-            <a href="https://www.ieeemadras.org/" target="_blank">Visit website</a>
+            <a href="https://www.ieeemadras.org/" target="_blank" rel="noreferrer">Visit website</a>
           </MsButton>
         </AboutContainer>
       </MadrasSection>
@@ -52,7 +52,9 @@ function Membership() {
                 </MemberCardContent>
               </CardCondition>
             </CardContents>
-            <CardButton>Know More</CardButton>
+            <CardButton>
+              <a rel="noreferrer" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi4xdCIsM76AhWpRmwGHb_YDkQQFnoECAwQAw&url=https%3A%2F%2Fwww.ieee.org%2Fmembership%2Fbenefits%2Findex.html%3FbyCareerPhase%3DAll%23%3A~%3Atext%3DIEEE%2520members%2520enjoy%2520reduced%2520rates%2Caffinity%2520programs%2520that%2520offer%2520savings.&usg=AOvVaw3ACVNrjqAb0mVbAWuRrAjh" target="_blank">Know More</a>
+            </CardButton>
           </MemberShipCard>
           <MemberShipCard>
             <CardTitle>Join a society</CardTitle>
@@ -83,7 +85,9 @@ function Membership() {
                 </MemberCardContent>
               </CardCondition>
             </CardContents>
-            <CardButton>View More</CardButton>
+            <CardButton>
+              <a href="https://www.ieee.org/communities/societies/index.html" target = "_blank" rel="noreferrer">View More</a>
+            </CardButton>
           </MemberShipCard>
           <MemberShipCard>
             <CardTitle>Join IEEE</CardTitle>
@@ -114,7 +118,9 @@ function Membership() {
                 </MemberCardContent>
               </CardCondition>
             </CardContents>
-            <CardButton>View More</CardButton>
+            <CardButton>
+              <a href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join" target = "_blank" rel="noreferrer">Join Now</a>
+            </CardButton>
           </MemberShipCard>
         </MembershipCards>
       </MembershipSection>
@@ -165,6 +171,7 @@ const AboutContainer = styled.div`
 
 const MsButton = styled.button`
   width: 160px;
+  border-radius : 0.2rem;
   height: 50px;
   color: #fff;
   background: #005f94;
@@ -180,6 +187,10 @@ const MsButton = styled.button`
   a {
     text-decoration: none;
     color: #fff;
+  }
+
+  &:hover {
+    background: #004578;
   }
 
   @media screen and (max-width: 768px) {

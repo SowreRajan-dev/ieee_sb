@@ -39,7 +39,7 @@ function App() {
           </Animator>
         </ScrollPage>
         <ScrollPage>
-          <NavContainer>
+          <NavContainer id="/">
             <Navbar />
           </NavContainer>
           <Animator>
@@ -48,9 +48,11 @@ function App() {
                 <EventPoster src="\Assets\eventposter\dpSeries.jpeg" />
                 <EventContent>
                   <EventName>Dynamic Gnimmargorp series O(1)</EventName>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmuemOiXCPV8MprOfx--b09Z2_eJtMampDxqQaakJ-QHjLUw/viewform">
+                  <br />
+                  <EventBtn className="page-button ghost-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfmuemOiXCPV8MprOfx--b09Z2_eJtMampDxqQaakJ-QHjLUw/viewform">
                     Register now
-                  </a>
+                  </EventBtn>
+                  <br />
                 </EventContent>
               </EventAlertBox>
             </EventBoxContainer>
@@ -155,3 +157,15 @@ const EventPoster = styled.img`
   height: calc(90vh - 100px);
   object-fit: contain;
 `;
+
+const EventBtn = styled.a`
+font-size: 1.4rem;
+color: #eeeeee;
+transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+text-decoration: none;
+padding: 0.75rem 1.25rem;
+border-radius: 12px;
+font-family: 'Montserrat', sans-serif;
+outline: 1px solid #0288d1;
+
+`

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 function VisionAndMission() {
   return (
-    <VisionAndMissionContainer>
+    <VisionAndMissionContainer id="visionmission">
       <VisionSection>
         <VisionHeader>Our vision</VisionHeader>
         <VisionMotto>“ INSPIRE... INNOVATE... INVENT... ”</VisionMotto>

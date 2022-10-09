@@ -1,6 +1,6 @@
 import { useState, Fragment } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 function Navbar() {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
@@ -16,10 +16,10 @@ function Navbar() {
     setNavbarOpen(!navbarOpen);
   };
   return (
-    <Fragment>
-      <Nav className={colorChange ? "navbar colorChange" : "navbar"}>
+    <Fragment >
+      <Nav className={colorChange ? "navbar colorChange" : "navbar"} id="/">
         <NavbarContainer clicked={navbarOpen}>
-          <NavbarLeft>
+          <NavbarLeft className={colorChange ? "show" : "hidden"}>
             <IeeeLogo>
               <IEEEAndSairam
                 src="Assets\Images\IeeeAndSairamLogo.png"
@@ -27,46 +27,48 @@ function Navbar() {
               />
             </IeeeLogo>
           </NavbarLeft>
-          <NavbarMiddle>
+          <NavbarMiddle >
             <MenuLabel htmlFor="navi-toggle" onClick={handleToggle}>
               <Icon clicked={navbarOpen}>&nbsp;</Icon>
             </MenuLabel>
             <NavbarUl clicked={navbarOpen}>
               <NavbarLink>
-                <Link to="/" style={{ textDecoration: "none" }}>
-                  <NavbarLinkText>Home</NavbarLinkText>
-                </Link>
+                <a href="/" style={{ textDecoration: "none" }}>
+                  <NavbarLinkText className= {colorChange ? "dark":"bright"}>Home</NavbarLinkText>
+                </a>
               </NavbarLink>
               <NavbarLink>
-                <Link to="/aboutus" style={{ textDecoration: "none" }}>
-                  <NavbarLinkText>About Us</NavbarLinkText>
-                </Link>
+                <a href="#aboutus" style={{ textDecoration: "none" }}>
+                  <NavbarLinkText className= {colorChange ? "dark":"bright"}>About Us</NavbarLinkText>
+                </a>
               </NavbarLink>
               <NavbarLink>
-                <Link to="/society" style={{ textDecoration: "none" }}>
-                  <NavbarLinkText>Society</NavbarLinkText>
-                </Link>
+                <a href="#society" style={{ textDecoration: "none" }}>
+                  <NavbarLinkText className= {colorChange ? "dark":"bright"}>Society</NavbarLinkText>
+                </a>
               </NavbarLink>
               <NavbarLink>
-                <Link to="/members" style={{ textDecoration: "none" }}>
-                  <NavbarLinkText>Members</NavbarLinkText>
-                </Link>
+                <a href="#members" style={{ textDecoration: "none" }}>
+                  <NavbarLinkText className= {colorChange ? "dark":"bright"}>Members</NavbarLinkText>
+                </a>
               </NavbarLink>
               <NavbarLink>
-                <Link to="/events" style={{ textDecoration: "none" }}>
-                  <NavbarLinkText>Events</NavbarLinkText>
-                </Link>
+                <a href="#events" style={{ textDecoration: "none" }}>
+                  <NavbarLinkText className= {colorChange ? "dark":"bright"}>Events</NavbarLinkText>
+                </a>
               </NavbarLink>
               <NavbarLink>
-                <Link to="/gallery" style={{ textDecoration: "none" }}>
-                  <NavbarLinkText>Gallery</NavbarLinkText>
-                </Link>
+                <a href="#gallery" style={{ textDecoration: "none" }}>
+                  <NavbarLinkText className= {colorChange ? "dark":"bright"}>Gallery</NavbarLinkText>
+                </a>
               </NavbarLink>
             </NavbarUl>
           </NavbarMiddle>
           <NavbarRight>
             <ContactUsContainer>
-              <ContactUsBtn>Contact Us</ContactUsBtn>
+              <ContactUsBtn>
+                <a href="#footer" style={{"textDecoration" : "none" , "color" : "white"}}>Contact Us</a>
+                </ContactUsBtn>
             </ContactUsContainer>
           </NavbarRight>
         </NavbarContainer>
@@ -88,7 +90,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   /* Fix your navbar by using above two lines of code */
-  z-index: 10;
+  z-index: 9999999999;
 `;
 const NavbarContainer = styled.div`
   height: 90px;
@@ -243,7 +245,6 @@ const NavbarUl = styled.ul`
 const NavbarLinkText = styled.p`
   font-size: 16px;
   font-weight: 500;
-  color: #000;
   font-family: "Montserrat", " sans-serif";
   text-transform: uppercase;
   cursor: pointer;

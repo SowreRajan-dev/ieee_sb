@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import {ImFacebook2 , ImTwitter} from "react-icons/im"
+import {AiFillInstagram, AiFillYoutube} from "react-icons/ai"
 
 function Footer() {
   return (
-    <Box>
+    <Box id="footer">
       <Container>
         <Row>
           <Column>
             <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
+            <FooterLink href="#visionmission">Aim</FooterLink>
             <FooterLink href="#">Vision</FooterLink>
             <FooterLink href="#">Testimonials</FooterLink>
           </Column>
@@ -23,24 +25,13 @@ function Footer() {
           <Column>
             <Heading>Social Media</Heading>
             <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
-              </i>
+            <ImFacebook2 style={{"scale" : "1.5"}}/>
+            </FooterLink>
+            <FooterLink href="https://instagram.com/sit_ieee?igshid=YmMyMTA2M2Y=" target="_blank">
+              <AiFillInstagram style={{"scale" : "2"}}/>
             </FooterLink>
             <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>Youtube</span>
-              </i>
+              <AiFillYoutube style={{"scale" : "2"}}/>
             </FooterLink>
           </Column>
         </Row>
@@ -48,12 +39,12 @@ function Footer() {
     </Box>
   );
 }
+
 const Box = styled.div`
   background: #005f94;
-  width: 100%;
+  width: 99.2vw;
   padding: 70px 30px;
   border-radius: 20px 20px 0 0;
-
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
