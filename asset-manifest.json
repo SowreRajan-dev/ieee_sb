@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ieee_sb/static/css/main.28ae0616.css",
+    "main.js": "/ieee_sb/static/js/main.aa00c375.js",
+    "index.html": "/ieee_sb/index.html",
+    "main.28ae0616.css.map": "/ieee_sb/static/css/main.28ae0616.css.map",
+    "main.aa00c375.js.map": "/ieee_sb/static/js/main.aa00c375.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28ae0616.css",
+    "static/js/main.aa00c375.js"
+  ]
+}
